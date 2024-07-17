@@ -1,0 +1,17 @@
+.navbar-custom {
+    background-color: red;
+    color: white; /* This is the success color from Bootstrap */
+  }
+
+  .navbar-custom {
+    background-color: red; /* Green background */
+    color: white; /* White text */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: white; /* White text for links */
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: white; /* White text for the brand */
+  }

@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        Test Users
+
+                    </div>
+                    <div class="col-6 text-end">
+                        <button class="btn btn-primary text-end">Find a new User</button>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>UserId</th>
+                            <th>User-Name</th>
+                            <th>User-Email</th>
+                            <th>Mobile Number</th>
+                            <th>IsKYCDone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @for (item of users; track $index) {
+                            <tr>
+                                <td>{{item.id}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.email}}</td>
+                                <td>{{item.mobile}}</td>
+                                <td>{{item.is_kyc_done}}</td>
+                                <td>
+                                    <button class="btn btn-danger" (click)="deleteUser(item.id)">Delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+        
+                </table>
+            </div>
+        </div>
+       
+    </div>
+</div>
